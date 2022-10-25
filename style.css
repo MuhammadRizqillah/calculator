@@ -1,5 +1,10 @@
 body {
-  background: #008087;
+  background: #e1d537;
+}
+
+.nama {
+  text-align: center;
+  font-size: 15px;
 }
 .container {
   top: 50%;
@@ -7,16 +12,19 @@ body {
   transform: translateX(-50%) translateY(-50%);
   position: absolute;
   background: transparent;
+  justify-content: center;
+  align-items: center;
 }
 .button {
-  width: 50;
-  height: 50;
-  font-size: 30;
+  width: 50px;
+  height: 50px;
+  font-size: 20;
   margin: 2;
   border: none;
   color: white;
   cursor: pointer;
   background: #333;
+  border-radius: 10px;
 }
 
 .button:hover {
@@ -30,7 +38,7 @@ body {
 }
 
 .hasil {
-  width: 100%;
+  width: 90%;
   height: 50px;
   border: none;
   outline: none;
@@ -38,4 +46,10 @@ body {
   text-align: center;
   background: #eeefff;
   opacity: 0.7;
+}
+
+@media (max-width: 670px) {
+  .nama {
+    font-size: 13px;
+  }
 }
